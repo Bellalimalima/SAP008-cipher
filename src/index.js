@@ -21,9 +21,9 @@ decifrar.addEventListener("click",function(e){
 
     e.preventDefault();
 
-    const valordeslocamentotwo = document.querySelector("#deslocamento").value;
-    const valortextotwo = document.querySelector("#texto").value;
-    const resultado = ciphertwo.decode(valordeslocamentotwo,valortextotwo);
+    const valordeslocamento = document.querySelector("#deslocamento").value;
+    const valortexto = document.querySelector("#texto").value;
+    const resultado = cipher.decode(valordeslocamento,valortexto);
 
     console.log(resultado);
 

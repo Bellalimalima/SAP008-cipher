@@ -21,4 +21,4 @@ const ciphertwo = {
   }
 };
 
-export default cipher;
+export default cipher; ciphertwo;
