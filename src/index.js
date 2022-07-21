@@ -6,9 +6,9 @@ cifrar.addEventListener("click",function(e){
     
     e.preventDefault();
 
-    const valordeslocamento = document.querySelector("#deslocamento").value;
-    const valortexto = document.querySelector("#texto").value;
-    const resultado = cipher.encode(valordeslocamento,valortexto);
+    let valorDeslocamento = document.querySelector("#deslocamento").value;
+    let valorTexto = document.querySelector("#texto").value;
+    let resultado = cipher.encode(valorDeslocamento,valorTexto);
 
     console.log(resultado);
 
@@ -21,9 +21,9 @@ decifrar.addEventListener("click",function(e){
 
     e.preventDefault();
 
-    const valordeslocamento = document.querySelector("#deslocamento").value;
-    const valortexto = document.querySelector("#texto").value;
-    const resultado = cipher.decode(valordeslocamento,valortexto);
+    let valorDeslocamento = document.querySelector("#deslocamento").value;
+    let valorTexto = document.querySelector("#texto").value;
+    let resultado = cipher.decode(valorDeslocamento,valorTexto);
 
     console.log(resultado);
 
