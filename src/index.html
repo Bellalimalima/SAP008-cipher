@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ceasar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div id="root"></div> 
+<head>
+  <meta charset="utf-8">
+  <title>Ceasar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <header>
-      <h1>Welcome to the Resistance!!!</h1>
-      <h2>Mande sua mensagem secreta para qualquer planeta. </h2>
-    </header>
-  
-    <main>
-      <h3>Escolha uma chave de deslocamento:</h3>
-      <section>
-        <input type="number" id="deslocamento" name="deslocamento" placeholder="Escolha um deslocamento">
-      </section>
-      
-      <section>
-        <h4>Digite uma mensagem:</h4>
-        <input type="text" id="texto" name="texto" placeholder="digite sua mensagem">
-        <input type="submit" id="criptografar" value="Criptografar">
-        <input type="submit" id="descriptografar" value="Descriptografar">
-      </section>
+<body>
+  <div id="root"></div>
 
-      <section>
-        <p><output type="text" id="resultado" name="resultado"></output></p>
-      </section>
-    </main>
+  <header>
+    <h1>Welcome to the Resistance!!!</h1>
+    <h2>Mande sua mensagem secreta para qualquer planeta. </h2>
+  </header>
 
-    <script src="index.js" type="module"></script>
-  </body>
+  <main>
+    <h3>Escolha uma chave de deslocamento:</h3>
+    <section>
+      <input type="number" id="deslocamento" name="deslocamento" placeholder="Escolha um deslocamento">
+    </section>
+
+    <section>
+      <h4>Digite uma mensagem:</h4>
+      <input type="text" id="texto" name="texto" placeholder="digite sua mensagem">
+      <input type="submit" id="criptografar" value="Criptografar">
+      <input type="submit" id="descriptografar" value="Descriptografar">
+    </section>
+
+    <section>
+      <p><output type="text" id="resultado" name="resultado"></output></p>
+    </section>
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
