@@ -2,7 +2,7 @@ const cipher = { encode, decode };
 
 function encode(offset, string) {
   let converterTexto = "";
-  for (let i = 0, j = string.length; i < j; i++) {
+  for (let i = 0; i<string.length; i++) {
     let numAscii = ((string.charCodeAt(i) - 65 + offset) % 26) + 65;
     converterTexto += String.fromCharCode(numAscii);
   }
@@ -11,7 +11,7 @@ function encode(offset, string) {
 
 function decode(offset, string) {
   let converterTexto = "";
-  for (let i = 0, j = string.length; i < j; i++) {
+  for (let i = 0; i<string.length; i++) {
     let numAscii = ((string.charCodeAt(i) - 65 - offset) % 26) + 65;
     converterTexto += String.fromCharCode(numAscii);
   }
