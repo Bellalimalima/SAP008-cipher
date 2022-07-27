@@ -35,6 +35,11 @@ h2 {
 h3 {
   color: rgb(245, 226, 78);
   text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 900px;
+  position: relative; /** posição da caixa, modo relativo que permite movimentá-la**/
+  left: 300px; /** movimentando 300px a partir do lado esquerdo**/
+  border-radius: 15px;
 }
 
 input[type="text"]#texto {
