@@ -10,7 +10,7 @@ cifrar.addEventListener("click", function (e) {
   );
   let valorTexto = document.querySelector("#texto").value;
   valorTexto = valorTexto.toUpperCase();
-  let resultado = cipher.encode(valorDeslocamento, valorTexto).toThrow(TypeError);
+  let resultado = cipher.encode(valorDeslocamento, valorTexto);
   document.getElementById("resultado").innerHTML =
     "Sua mensagem está pronta:" + resultado;
 });
@@ -24,7 +24,7 @@ decifrar.addEventListener("click", function (e) {
     document.querySelector("#deslocamento").value
   );
   let valorTexto = document.querySelector("#texto").value;
-  let resultado = cipher.decode(valorDeslocamento, valorTexto).toThrow(TypeError);
+  let resultado = cipher.decode(valorDeslocamento, valorTexto);
   document.getElementById("resultado").innerHTML =
     "Sua mensagem está pronta:" + resultado;
 });
